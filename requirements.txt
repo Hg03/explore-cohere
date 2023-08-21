@@ -1,0 +1,6 @@
+cohere
+streamlit
+streamlit-extras
+markdownlit
+pandas
+scikit-learn
