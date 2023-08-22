@@ -10,6 +10,13 @@ from PIL import Image
 im = Image.open('favicon.ico')
 st.set_page_config(layout='wide',page_title='explore co:here',page_icon=im)
 
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
 
 def add_data(text,target):
     if text or target is not None:
